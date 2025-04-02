@@ -1,0 +1,223 @@
+/* --- EasyVerein Membership Form Styles --- */
+/* --- Version: 1.0.1 --- */
+
+/* == Wrapper and General Layout == */
+.easyverein-membership-form-wrapper {
+    max-width: 800px; /* Adjust as needed */
+    /*margin: 30px auto; /* Center the form with some top/bottom margin */
+    padding: 25px 30px;
+    background-color: #ffffff; /* Match background if needed, or keep white */
+   /* border: 1px solid #e0e0e0;  Light border */
+    /*border-radius: 6px;  Slightly rounded corners */
+    /*-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Example font - CHANGE TO MATCH utsavev.com */
+    color: #333; /* Default text color */
+}
+
+/* == Headings and Paragraphs == */
+.easyverein-membership-form-wrapper h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #2c3e50; /* Example color - CHANGE TO MATCH */
+}
+
+.easyverein-membership-form-wrapper p {
+    margin-bottom: 18px; /* Spacing between form rows/paragraphs */
+    line-height: 1.6;
+}
+
+/* == Fieldsets and Legends == */
+.easyverein-membership-form-wrapper fieldset {
+    border: 1px solid #d5d5d5;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+}
+
+.easyverein-membership-form-wrapper legend {
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 1.2em;
+    color: #34495e; /* Example color - CHANGE TO MATCH */
+    margin-left: -10px; /* Align with fieldset padding */
+}
+
+/* == Form Rows and Labels == */
+.ev-form-row {
+    margin-bottom: 15px;
+}
+
+.easyverein-membership-form-wrapper label {
+    display: block; /* Labels on their own line */
+    margin-bottom: 6px;
+    font-weight: 600; /* Bold labels */
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* Required field indicator */
+.easyverein-membership-form-wrapper label .required {
+    color: #e74c3c; /* Red color for asterisk */
+    margin-left: 3px;
+    font-weight: bold;
+}
+
+/* == Input Fields, Selects, Textareas == */
+.easyverein-membership-form-wrapper input[type="text"],
+.easyverein-membership-form-wrapper input[type="email"],
+.easyverein-membership-form-wrapper input[type="tel"],
+.easyverein-membership-form-wrapper input[type="date"],
+.easyverein-membership-form-wrapper select,
+.easyverein-membership-form-wrapper textarea {
+    width: 100%; /* Full width */
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding/border in width */
+    font-size: 1em;
+    color: #333;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+/* Style for focus state */
+.easyverein-membership-form-wrapper input[type="text"]:focus,
+.easyverein-membership-form-wrapper input[type="email"]:focus,
+.easyverein-membership-form-wrapper input[type="tel"]:focus,
+.easyverein-membership-form-wrapper input[type="date"]:focus,
+.easyverein-membership-form-wrapper select:focus,
+.easyverein-membership-form-wrapper textarea:focus {
+    border-color: #3498db; /* Example focus color - CHANGE TO MATCH */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Subtle glow on focus */
+}
+
+/* Specific styling for select dropdown arrows (browser defaults vary) */
+.easyverein-membership-form-wrapper select {
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); /* Simple dropdown arrow SVG */
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 10px auto;
+    padding-right: 30px; /* Make space for the arrow */
+}
+
+/* == Checkboxes == */
+.ev-form-checkbox {
+    display: flex; /* Align checkbox and label nicely */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.easyverein-membership-form-wrapper input[type="checkbox"] {
+   margin-top: 4px; /* Adjust vertical alignment */
+   margin-right: 10px;
+   flex-shrink: 0; /* Prevent checkbox from shrinking */
+   width: 18px; /* Custom size */
+   height: 18px;
+}
+
+.easyverein-membership-form-wrapper .ev-form-checkbox label {
+    display: inline; /* Keep label inline with checkbox */
+    font-weight: normal; /* Normal weight for agreement text */
+    margin-bottom: 0;
+    font-size: 0.9em;
+}
+.easyverein-membership-form-wrapper .ev-form-checkbox label a {
+    color: #3498db; /* Example link color - CHANGE TO MATCH */
+    text-decoration: none;
+}
+.easyverein-membership-form-wrapper .ev-form-checkbox label a:hover {
+    text-decoration: underline;
+}
+
+
+/* == Helper Text / Small Text == */
+.easyverein-membership-form-wrapper small {
+    display: block;
+    font-size: 0.85em;
+    color: #777;
+    margin-top: 4px;
+}
+
+/* == Submit Button == */
+.ev-form-submit {
+    text-align: center; /* Center the button */
+    margin-top: 30px;
+}
+
+.easyverein-membership-form-wrapper .ev-submit-button {
+    padding: 12px 30px;
+    background-color: #3498db; /* Example primary color - CHANGE TO MATCH */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.easyverein-membership-form-wrapper .ev-submit-button:hover {
+    background-color: #2980b9; /* Darker shade on hover - CHANGE TO MATCH */
+}
+.easyverein-membership-form-wrapper .ev-submit-button:active {
+    transform: translateY(1px); /* Slight press effect */
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+
+/* == Status Messages (Success/Error/Validation) == */
+.ev-form-message {
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.ev-form-success {
+    color: #155724; /* Dark green text */
+    background-color: #d4edda; /* Light green background */
+    border-color: #c3e6cb; /* Green border */
+}
+
+.ev-form-error {
+    color: #721c24; /* Dark red text */
+    background-color: #f8d7da; /* Light red background */
+    border-color: #f5c6cb; /* Red border */
+}
+
+/* == Responsive Adjustments (Example) == */
+@media (max-width: 600px) {
+    .easyverein-membership-form-wrapper {
+        padding: 15px;
+        margin: 15px;
+    }
+    .easyverein-membership-form-wrapper h2 {
+        font-size: 1.5em;
+    }
+    .easyverein-membership-form-wrapper fieldset {
+        padding: 15px;
+    }
+     .easyverein-membership-form-wrapper .ev-submit-button {
+        width: 100%; /* Full width button on small screens */
+        padding: 15px;
+    }
+}
+
+/*
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    !!! IMPORTANT:                                           !!!
+    !!! Replace the example colors, fonts, and potentially   !!!
+    !!! layout styles above with the specific styles found   !!!
+    !!! on https://utsavev.com/membership/ using your        !!!
+    !!! browser's developer tools (Inspect Element).         !!!
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*/
